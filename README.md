@@ -140,3 +140,10 @@ You shouldn't use these, but I will document them anyway.
 
 This returns an actual CD+G binary packet. There are all sorts of other things stuffed within the CD+G packet, including Q and P parity. No idea what this is about, but we have to do this.
 
+# Examples
+
+Download this whole folder and type in:
+
+python3 capemay.py
+
+It will generate capemay.cdg, containing a top to bottom pan of the famous Cape May NJ lighthouse!
