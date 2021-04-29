@@ -46,11 +46,27 @@ Creates a new buffer for CD+G data. If one exists, it will clear the buffer.
 
 Returns the buffer as the result. Can be used to write a file or print into stdout.
 
+* delaySeconds(*seconds*)
+
+Delay seconds, pad stream with nulls for *seconds*
+
+* delayTicks(*ticks*)
+
+Delay for number of *ticks* -- each tick is 6.6ms or about 150 ticks per second. Pads stream with nulls.
+
+* scroll(*direction*,*color*,[*step*],[*wrap*])
+
+Scrolls the screen in a direction, at a specified step. Color is the color of the blank area to filled after the scrolling event.
+Leaving step blank will advance the typical column/row pixels, which is jumpy but fast. Specifying a step will produce smoother scrolling.
+When WRAP is provided, the display will actually wrap around itself when it scrolls (ie: stuff on the left appears on the right). Just like
+old video games. It can be used for a sort of marquee effect.
+
+
 # Private Functions
 
 You shouldn't use these, but I will document them anyway.
 
-* _makeCDGPacket(instruction, packet)
+* _makeCDGPacket(*instruction*, *packet*)
 
 *Instruction* contains the actual instruction to be passed, in numerical format. 
 *Packet* is the contents of the packet.
