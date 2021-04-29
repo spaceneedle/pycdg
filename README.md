@@ -123,7 +123,9 @@ Display one character at column X and row Y. With optional XOR function.
 
 * printScreen(*text*,*[xor]*)
 
-Prints text of any length to the screen, following the rules and boundries of rows and columns visible on the screen. If the screen is full, it will scroll down. There are some weird bugs when text is at the bottom and a new line is found. Sometimes text is overwritten. Will fix this soon.
+Prints text of any length to the screen, following the rules and boundries of rows and columns visible on the screen. If the screen is full, it will scroll down. There are some weird bugs when text is at the bottom and a new line is found. Sometimes text is overwritten. Will fix this soon. 
+
+Note that we use a font I made in a hurry called "crapfont". As the name implies, its very crappy. Currently, only letters in caps are supported. Better fonts coming soon. (hopefully, generated directly from PIL).
 
 * setCursor**x*,*y*)
 
