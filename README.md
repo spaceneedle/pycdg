@@ -127,7 +127,7 @@ Prints text of any length to the screen, following the rules and boundries of ro
 
 Note that we use a font I made in a hurry called "crapfont". As the name implies, its very crappy. Currently, only letters in caps are supported. Better fonts coming soon. (hopefully, generated directly from PIL).
 
-* setCursor**x*,*y*)
+* setCursor(*x*,*y*)
 
 Position the cursor at column *x* and row *y*
 
