@@ -1,35 +1,4 @@
-
-<!-- saved from url=(0034)https://jbum.com/cdg_revealed.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>CD+G Revealed</title>
-<meta name="description" content="An informal description of how CD+G works.">
-<meta name="keywords" content="Jim Bumgardner, karaoke, CD+G, yellow book, red book, subchannel, compact disc">
-<link rel="stylesheet" type="text/css" href="./CD+G Revealed_files/base_sm.css">
-</head>
-<body bgcolor="white" text="black">
-
-<!--#include file="header.html" -->
-
-<p>
-</p><p>
-<i>In the early 1990s, I worked at Warner New Media (which was later merged into <a href="https://en.wikipedia.org/wiki/Time_Warner_Interactive">Time Warner Interactive</a>), an early producer of discs in the CD+G format. Time/Warner was a Philips licensee and as an employee I had access to the various CD-Audio and CD-ROM standards, including the CD+G standard, which was an extension of the so-called Red Book.  At this time (and to this day) the only official source of this information was Philips and you had to pay a very expensive licensing fee (in the $30,000 range as I recall) to get access to it. The price has since been lowered to $100.
-</i></p><p><i>
-At this time, there were no pure software players that could play CD+G (Karaoke) discs on a desktop computer -- you needed a special karaoke player to do it. So, using the Red Book as a reference, I wrote a software player capable of playing these discs on a Macintosh from an Apple CD300 CD-ROM drive (or other drives that supported the same driver calls).
-</i></p><p><i>
-In 1995, I decided to make a technical document describing the CD+G format, so that other hobbyists could reproduce my work without having to pay an exhorbitant fee for the license. To make this document, I used my own source code (and memory) as a reference, and described the CD+G format from the point-of-view of a C programmer attempting to write a player. I also released the <a href="https://jbum.com/sware/cdg_player.source.hqx">source code</a> to my <a href="https://jbum.com/sware/cdg_player_101.hqx">original CD+G player software</a>.
-</i></p><p><i>
-The original document, "CD+G Revealed", is shown below
-</i></p><p><i>
-I remember being a little nervous publishing it, since I thought there might be some threat of a (baseless) lawsuit that I could ill afford, but ultimately nothing transpired.
-</i></p><p><i>
-In the years since, I have been gratified to see my document cited as a useful reference by numerous people who have written Karaoke playback sofware.
-</i></p><p><i>
-Jim Bumgardner 2020-07-09</i>
-</p><p>
-</p><hr>
-<font size="+2"><b>CD+G Revealed: Playing back Karaoke tracks in Software</b></font>
-<p>
-</p><pre>Version 1.0
+Version 1.0
 
 1/9/95
 
