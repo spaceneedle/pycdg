@@ -61,6 +61,73 @@ Leaving step blank will advance the typical column/row pixels, which is jumpy bu
 When WRAP is provided, the display will actually wrap around itself when it scrolls (ie: stuff on the left appears on the right). Just like
 old video games. It can be used for a sort of marquee effect.
 
+* multiScroll() [TBD]
+
+This future function will support (never used) diagonal scrolling
+
+* smoothScroll(*direction*)
+
+Smooth scrolling routine advances the screen scroll by just one pixel.
+
+* screenColor(*color*)
+
+Change the screen to the color specified as the *color* argument
+
+* borderColor(*color*)
+
+Change the screen border to the color specified as the *color* argument
+
+* paletteLow(*palette*,[*duplicates*])
+
+Configure the low palette (colors 0-7) with the 4096 color palette specified
+
+* paletteHigh(*palette*,[*duplicates*])
+
+Configure the low palette (colors 8-15) with the 4096 color palette specified
+
+* fadeIn(*speed*,*palette*)
+
+Fade in palette from black to max palette color, at speed measured in ticks.
+
+* fadeOut(*speed*,*palette*)
+
+Fade in palette from black to max palette color, at speed measured in ticks.
+
+* paletteCycle(*color*,*sequence*,*delay*,*counter*) [TBD]
+
+This future function will support palette cycles.
+
+* tileBlock(*colora*,*colorb*,*row*,*column*,*pixels*)
+
+Renders to the display a native 2 color, 1 bit tile, with the color indexs specified, at the position indicated. Pixels contains the binary 1 bit data of the tile pixel content.
+
+* tileBlockXOR(*colora*,*colorb*,*row*,*column*,*pixels*)
+
+Renders to the display a native 2 color, 1 bit tile, with the color indexs specified, XOR'ed to existing pixels at the position indicated. Pixels contains the binary 1 bit data of the tile pixel content.
+
+* loadImage(*filename*)
+
+Load an image and store in the variable speecified.
+
+* getPalette(*image variable*)
+
+Get the palette from the image that was loaded.\
+
+* scrollImageUp(*image*,*speed*)
+
+Do a smooth scroll of the specified image at the speed specified. This is a "fast color" image, a made up term, that involves a special tile processing technique. We take the most dominant color and allow it to be a pixel where specified. We then find the second dominant color and make it the color for the remaining pixels. For images of objects, it works fine. Human figures and fine details can look a bit creepy. This rendering, however, is the fastest a CD+G can make an image.
+
+* textTile(*character*,*x*,*y*,*[xor]*)
+
+Display one character at column X and row Y. With optional XOR function. 
+
+* printScreen(*text*,*[xor]*)
+
+Prints text of any length to the screen, following the rules and boundries of rows and columns visible on the screen. If the screen is full, it will scroll down. There are some weird bugs when text is at the bottom and a new line is found. Sometimes text is overwritten. Will fix this soon.
+
+* setCursor**x*,*y*)
+
+Position the cursor at column *x* and row *y*
 
 # Private Functions
 
