@@ -5,7 +5,7 @@ By Casey Halverson (spaceneedle@gmail.com)
 
 There are quite a few visual commercial CD+G applications, and even some open source applications, that generate CD+G files. HOWEVER, I wasn't able to find one that A) generated them programmatically B) supported some rarely used modes and techniques that are difficult to implement.
 
-I have seen many great CD+G examples that really pushed the format in the late 1980's and early 1990's, so I decided to create a library that might be able to foster a demoscene for CD+G. With an unusual 20 years of experience with embedded python, I apologize for my brief nature of python scripting. Gotta keep stuff small with very minimal module support. This is even my first use of __init__.py.
+I have seen many great CD+G examples that really pushed the format in the late 1980's and early 1990's, so I decided to create a library that might be able to foster a demoscene for CD+G. With an unusual 20 years of experience with embedded python, I apologize for my brief nature of python scripting. Gotta keep stuff small with very minimal module support. *import pycdg* is all you need!
 
 While I welcome you to read the CD+G Revealed file contained in this github, here is my summary:
 
